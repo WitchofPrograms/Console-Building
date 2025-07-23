@@ -1,14 +1,18 @@
-//
-//  main.cpp
-//  building
-//
-//  Created by atay özdemir on 23.07.2025.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(){ //1 8 16 24 32
+    int a = 0;
+    int sehirbuyuklugu = 4;
+    for(int b=0 ; b < sehirbuyuklugu ; b++){
+        a = a + 8;
+    }
+    int flag = 0;
+    do{
+        for(int i = -1 ; i<a ; i++){
+            cout << "a";
+        }
+        flag++;
+    }while(flag != sehirbuyuklugu);
 }
+
